@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet"  href="style.css">
+    <title>HUMAN RESOURCES</title>
+</head>
+<body>
+    <section class="title">
+        <h1>
+            FINAL PRACTICE <br>
+            Quản Lí Nhân Sự
+        </h1>
+    </section>
+    <table>
+        <tr>
+            <td>
+                <form onsubmit="event.preventDefault();onFormSubmit();" autocomplete="off">
+                    <div>
+                        <label>Họ Tên</label><label class="validation-error hide" id="fullNameValidationError"></label>
+                        <input type="text" name="fullName" id="fullName" placeholder="Hãy Nhập Đầy Đủ Tên Của Bạn">
+                    </div>
+                    <div>
+                        <label>Mã Nhân Viên</label>
+                        <input type="text" name="empCode" id="empCode" placeholder="Hãy Nhập Mã Nhân Viên Của Bạn">
+                    </div>
+                    <div>
+                        <label>Lương</label>
+                        <input type="text" name="salary" id="salary" placeholder="Hãy Nhập Số Lương Của Bạn ">
+                    </div>
+                    <div>
+                        <label>Thành Phố</label>
+                        <input type="text" name="city" id="city" placeholder="Hãy Nhập Thành Phố Bạn Đang Sinh Sống ">
+                    </div>
+                    <div  class="form-action-buttons">
+                        <input type="submit" value="Submit">
+                    </div>
+                </form>
+            </td>
+            <td>
+                <table class="list" id="employeeList">
+                    <thead>
+                        <tr>
+                            <th>Họ Tên</th>
+                            <th>Mã Nhân Viên</th>
+                            <th>Lương</th>
+                            <th>Thành Phố</th>
+                            <th></th>
+                        </tr>
+                    </thead>
+                    <tbody>
+
+                    </tbody>
+                </table>
+            </td>
+        </tr>
+    </table>
+    <section class="back">
+        <div>
+            <a class="back-indexpage" href="./index.html">Trang Chủ</a>
+        </div>
+    </section>
+    
+    <script src="script.js"></script>
+</body>
+</html>
